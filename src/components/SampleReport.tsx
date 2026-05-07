@@ -16,7 +16,7 @@ const BLURRED_SECTIONS = [
 
 export default function SampleReport() {
   return (
-    <section className="bg-navy py-24 px-6">
+    <section id="sample-report" className="bg-navy py-24 px-6">
       <div className="max-w-5xl mx-auto">
         <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-4">
           Sample Report

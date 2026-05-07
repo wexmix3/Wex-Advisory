@@ -69,7 +69,7 @@ export default function CaseStudy() {
                 &ldquo;The analysis surfaced gaps we didn&apos;t know we had — and gave us a clear
                 roadmap to close them.&rdquo;
               </p>
-              <cite className="text-white/40 text-sm not-italic">— 25N Coworking</cite>
+              <cite className="text-white/40 text-sm not-italic">— Founder, 25N Coworking</cite>
             </blockquote>
           </div>
         </div>

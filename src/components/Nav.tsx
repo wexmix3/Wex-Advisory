@@ -16,8 +16,19 @@ export default function Nav() {
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/60">
           <a href="#services" className="hover:text-white transition-colors">Services</a>
           <a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a>
-          <a href="#case-study" className="hover:text-white transition-colors">Case Study</a>
+          <a href="#case-study" className="hover:text-white transition-colors">Results</a>
           <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+          <a
+            href="https://www.linkedin.com/in/max-wexley"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+            aria-label="LinkedIn"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
         </nav>
 
         <a
@@ -48,8 +59,16 @@ export default function Nav() {
         <div className="md:hidden border-t border-white/10 px-6 py-4 flex flex-col gap-4 text-sm text-white/70">
           <a href="#services" onClick={() => setMenuOpen(false)} className="hover:text-white">Services</a>
           <a href="#how-it-works" onClick={() => setMenuOpen(false)} className="hover:text-white">How It Works</a>
-          <a href="#case-study" onClick={() => setMenuOpen(false)} className="hover:text-white">Case Study</a>
+          <a href="#case-study" onClick={() => setMenuOpen(false)} className="hover:text-white">Results</a>
           <a href="#pricing" onClick={() => setMenuOpen(false)} className="hover:text-white">Pricing</a>
+          <a
+            href="https://www.linkedin.com/in/max-wexley"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white"
+          >
+            LinkedIn ↗
+          </a>
           <a href="#pricing" onClick={() => setMenuOpen(false)} className="mt-2 inline-block px-5 py-2.5 rounded-lg bg-gold text-navy font-bold text-center">
             Get a Report →
           </a>

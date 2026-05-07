@@ -22,20 +22,26 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-16">
+        <div className="flex flex-col sm:flex-row gap-4 mb-4">
+          <a
+            href="#sample-report"
+            className="inline-block px-8 py-4 rounded-xl bg-gold text-navy font-bold text-sm hover:bg-gold-muted transition-colors text-center"
+          >
+            See What&apos;s in a Report →
+          </a>
           <a
             href="#pricing"
-            className="inline-block px-8 py-4 rounded-xl bg-gold text-navy font-bold text-sm hover:bg-gold-muted transition-colors text-center"
+            className="inline-block px-8 py-4 rounded-xl border border-white/20 text-white/80 font-semibold text-sm hover:border-gold hover:text-gold transition-colors text-center"
           >
             Get Your Report — Starting at $149
           </a>
-          <a
-            href="#contact"
-            className="inline-block px-8 py-4 rounded-xl border border-white/20 text-white/80 font-semibold text-sm hover:border-gold hover:text-gold transition-colors text-center"
-          >
-            Book a Discovery Call
-          </a>
         </div>
+        <p className="text-white/30 text-sm mb-12">
+          Have questions?{" "}
+          <a href="#contact" className="text-gold/70 hover:text-gold transition-colors">
+            Contact us →
+          </a>
+        </p>
 
         {/* Trust bar */}
         <div className="flex flex-wrap gap-6 text-white/30 text-xs">
