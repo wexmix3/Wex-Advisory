@@ -1,7 +1,5 @@
 "use client";
 
-const TOOL_URL = "https://tool.wexadvisory.com";
-
 const TIERS = [
   {
     name: "Starter",
@@ -9,7 +7,7 @@ const TIERS = [
     cadence: "one-time",
     badge: null,
     highlight: false,
-    description: "Get a comprehensive intelligence report on your top competitors — ready in under 60 seconds.",
+    description: "A comprehensive intelligence report on your top competitors — delivered to your inbox within 24 hours of your request.",
     features: [
       "Full competitive intelligence report",
       "3 competitor deep-dives",
@@ -18,8 +16,8 @@ const TIERS = [
       "Budget-calibrated recommendations",
       "Professional-grade PDF download",
     ],
-    cta: "Get Starter Report",
-    href: TOOL_URL,
+    cta: "Request Starter Report",
+    href: "#contact",
   },
   {
     name: "Professional",
@@ -36,8 +34,8 @@ const TIERS = [
       "30-min debrief call with Max",
       "Follow-up Q&A via email",
     ],
-    cta: "Get Professional Report",
-    href: TOOL_URL,
+    cta: "Request Professional Report",
+    href: "#contact",
   },
   {
     name: "Monthly Retainer",
@@ -165,7 +163,7 @@ export default function Pricing() {
         </div>
 
         <p className="text-center text-white/20 text-xs mt-8">
-          ✓ Powered by Claude AI · ✓ Real traffic data via DataForSEO · ✓ Secured by Stripe · ✓ Reports delivered as professional PDFs
+          ✓ Powered by Claude AI · ✓ Real traffic data via DataForSEO · ✓ Delivered within 24 hours · ✓ Professional PDF format
         </p>
       </div>
     </section>

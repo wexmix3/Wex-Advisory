@@ -18,7 +18,7 @@ export default function Hero() {
         <p className="text-white/60 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
           Professional competitive intelligence, priced for small business. We deliver
           a full intelligence report — traffic benchmarks, competitor deep-dives,
-          and actionable strategy — in under 60 seconds.
+          and actionable strategy — delivered within 24 hours.
         </p>
 
         {/* CTAs */}
