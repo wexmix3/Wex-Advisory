@@ -44,8 +44,8 @@ export async function POST(req: NextRequest) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Wex Advisory <onboarding@resend.dev>",
-        to: "maxmwexley@gmail.com",
+        from: "Wex Advisory <noreply@wexadvisory.com>",
+        to: "maxwexley@wexadvisory.com",
         subject: `New inquiry from ${name}${company ? ` at ${company}` : ""}`,
         html,
       }),
