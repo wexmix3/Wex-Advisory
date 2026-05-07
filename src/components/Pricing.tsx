@@ -1,7 +1,6 @@
 "use client";
 
-// Update TOOL_URL once the competitor-analysis tool is deployed
-const TOOL_URL = "https://wexadvisory.com/tool";
+const TOOL_URL = "https://tool.wexadvisory.com";
 
 const TIERS = [
   {
