@@ -52,9 +52,13 @@ export async function POST(req: NextRequest) {
     });
 
     if (!res.ok) {
-      const err = await res.text();
-      console.error("[contact] Resend error:", err);
-      return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+      const errBody = await res.text();
+      console.error("[contact] Resend error:", errBody);
+      // Surface the actual Resend error so it's visible in Vercel function logs
+      return NextResponse.json(
+        { error: "Failed to send email", detail: errBody },
+        { status: 500 }
+      );
     }
 
     return NextResponse.json({ ok: true });

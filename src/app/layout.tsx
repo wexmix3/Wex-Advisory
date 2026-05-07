@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/api/og",
         width: 1200,
         height: 630,
         alt: "Wex Advisory — Competitor Intelligence for Small Business",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Wex Advisory — Competitor Intelligence for Small Business",
     description:
       "Know exactly where you stand. Competitor deep-dives, traffic benchmarks, and actionable strategy — starting at $149.",
-    images: ["/og-image.png"],
+    images: ["/api/og"],
   },
 };
 
