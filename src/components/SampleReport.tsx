@@ -76,13 +76,17 @@ export default function SampleReport() {
           {/* Overlay CTA */}
           <div className="absolute inset-0 flex items-center justify-center bg-navy/60 backdrop-blur-[2px]">
             <div className="text-center">
-              <p className="text-white/70 text-sm mb-4">Get the full report for your business</p>
+              <p className="text-white/70 text-sm mb-4">See the full format — download a sample report</p>
               <a
-                href="#pricing"
-                className="inline-block px-7 py-3 rounded-xl bg-gold text-navy font-bold text-sm hover:bg-gold-muted transition-colors"
+                href="/sample-report.pdf"
+                download="Wex-Advisory-Sample-Report.pdf"
+                className="inline-block px-7 py-3 rounded-xl bg-gold text-navy font-bold text-sm hover:bg-gold-muted transition-colors mb-3"
               >
-                See Pricing → Starting at $149
+                ↓ Download Sample Report (PDF)
               </a>
+              <p className="text-white/40 text-xs">
+                11-page report · Competitive profiles, gap analysis & recommendations
+              </p>
             </div>
           </div>
         </div>
