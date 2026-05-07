@@ -56,7 +56,7 @@ export default function ContactForm() {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <span>maxmwexley@gmail.com</span>
+                <span>maxwexley@wexadvisory.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
@@ -133,7 +133,7 @@ export default function ContactForm() {
                 </div>
 
                 {state === "error" && (
-                  <p className="text-red-400 text-sm">Something went wrong — please email us directly at maxmwexley@gmail.com</p>
+                  <p className="text-red-400 text-sm">Something went wrong — please email us directly at maxwexley@wexadvisory.com</p>
                 )}
 
                 <button
