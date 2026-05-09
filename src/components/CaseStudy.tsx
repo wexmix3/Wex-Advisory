@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const OUTCOMES = [
   { stat: "3", label: "Local SEO gaps identified" },
   { stat: "5", label: "Competitor deep-dives" },
@@ -24,10 +26,11 @@ export default function CaseStudy() {
             </div>
             <div className="flex flex-col items-end gap-2">
               <div className="bg-white rounded-lg px-4 py-2">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="/25n-logo.png"
                   alt="25N Coworking"
+                  width={120}
+                  height={32}
                   className="h-8 w-auto object-contain"
                 />
               </div>

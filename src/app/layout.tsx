@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const SITE_URL = "https://www.wexadvisory.com";
@@ -73,7 +74,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>{children}</body>
+      <body style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

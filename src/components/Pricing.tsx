@@ -1,5 +1,9 @@
 "use client";
 
+const STRIPE_STARTER = process.env.NEXT_PUBLIC_STRIPE_STARTER_LINK || "#contact";
+const STRIPE_PRO     = process.env.NEXT_PUBLIC_STRIPE_PRO_LINK     || "#contact";
+const CALENDLY_URL   = process.env.NEXT_PUBLIC_CALENDLY_URL        || null;
+
 const TIERS = [
   {
     name: "Starter",
@@ -16,8 +20,9 @@ const TIERS = [
       "Budget-calibrated recommendations",
       "Professional-grade PDF download",
     ],
-    cta: "Request Starter Report",
-    href: "#contact",
+    cta: "Get Starter Report — $149",
+    href: STRIPE_STARTER,
+    external: STRIPE_STARTER !== "#contact",
   },
   {
     name: "Professional",
@@ -34,8 +39,9 @@ const TIERS = [
       "30-min debrief call with Max",
       "Follow-up Q&A via email",
     ],
-    cta: "Request Professional Report",
-    href: "#contact",
+    cta: "Get Professional Report — $299",
+    href: STRIPE_PRO,
+    external: STRIPE_PRO !== "#contact",
   },
   {
     name: "Monthly Retainer",
@@ -54,6 +60,7 @@ const TIERS = [
     ],
     cta: "Start Retainer",
     href: "#contact",
+    external: false,
   },
 ];
 
@@ -133,6 +140,7 @@ export default function Pricing() {
 
               <a
                 href={tier.href}
+                {...(tier.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className={`w-full py-3.5 rounded-xl font-bold text-sm text-center transition-all ${
                   tier.highlight
                     ? "bg-navy text-gold hover:bg-navy-light"
@@ -141,6 +149,17 @@ export default function Pricing() {
               >
                 {tier.cta}
               </a>
+
+              {tier.highlight && CALENDLY_URL && (
+                <a
+                  href={CALENDLY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 w-full py-2.5 rounded-xl text-sm text-center text-navy/60 hover:text-navy font-medium transition-colors"
+                >
+                  📅 Book your debrief call →
+                </a>
+              )}
             </div>
           ))}
         </div>
