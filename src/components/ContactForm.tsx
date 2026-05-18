@@ -41,11 +41,12 @@ export default function ContactForm() {
               Get in Touch
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Let&apos;s talk about your competitive position
+              Let&apos;s talk
             </h2>
             <p className="text-white/50 text-base leading-relaxed mb-8">
-              Whether you&apos;re ready to buy a report or want to talk through a custom
-              engagement, reach out. We typically respond within 24 hours.
+              Whether you&apos;re interested in a report, want to explore automation,
+              or just have a question — reach out. I read every message personally and
+              respond within 24 hours.
             </p>
 
             <div className="space-y-4 text-sm text-white/50">
@@ -56,7 +57,20 @@ export default function ContactForm() {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <span>maxwexley@wexadvisory.com</span>
+                <a href="mailto:maxwexley@wexadvisory.com" className="hover:text-white transition-colors">
+                  maxwexley@wexadvisory.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <a href="tel:+12242471940" className="hover:text-white transition-colors">
+                  (224) 247-1940
+                </a>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
@@ -81,7 +95,7 @@ export default function ContactForm() {
                 </div>
                 <h3 className="text-white font-bold text-lg mb-2">Message sent</h3>
                 <p className="text-white/50 text-sm">
-                  Thanks — we&apos;ll be in touch within 24 hours.
+                  Thanks — I&apos;ll be in touch within 24 hours.
                 </p>
               </div>
             ) : (
@@ -121,11 +135,11 @@ export default function ContactForm() {
                   />
                 </div>
                 <div>
-                  <label className="block text-white/40 text-xs uppercase tracking-wider mb-2">Message *</label>
+                  <label className="block text-white/40 text-xs uppercase tracking-wider mb-2">What can I help with? *</label>
                   <textarea
                     required
                     rows={5}
-                    placeholder="Tell us about your business and what you'd like to know about your competition..."
+                    placeholder="Tell me a bit about your business and what you're trying to figure out..."
                     className={`${inputClass} resize-none`}
                     value={form.message}
                     onChange={(e) => update("message", e.target.value)}
@@ -133,7 +147,12 @@ export default function ContactForm() {
                 </div>
 
                 {state === "error" && (
-                  <p className="text-red-400 text-sm">Something went wrong — please email us directly at maxwexley@wexadvisory.com</p>
+                  <p className="text-red-400 text-sm">
+                    Something went wrong — email me at{" "}
+                    <a href="mailto:maxwexley@wexadvisory.com" className="underline">
+                      maxwexley@wexadvisory.com
+                    </a>
+                  </p>
                 )}
 
                 <button

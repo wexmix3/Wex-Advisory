@@ -14,10 +14,10 @@ export default function Nav() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/60">
-          <a href="#services" className="hover:text-white transition-colors">Services</a>
-          <a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a>
-          <a href="#case-study" className="hover:text-white transition-colors">Results</a>
+          <a href="#competitive-analysis" className="hover:text-white transition-colors">Competitive Analysis</a>
+          <a href="#workflow-automation" className="hover:text-white transition-colors">Workflow Automation</a>
           <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+          <a href="#about" className="hover:text-white transition-colors">About</a>
           <a
             href="https://www.linkedin.com/in/max-wexley"
             target="_blank"
@@ -32,10 +32,10 @@ export default function Nav() {
         </nav>
 
         <a
-          href="#pricing"
+          href="#contact"
           className="hidden md:inline-block px-5 py-2.5 rounded-lg bg-gold text-navy font-bold text-sm hover:bg-gold-muted transition-colors"
         >
-          Get a Report →
+          Get Started →
         </a>
 
         {/* Mobile toggle */}
@@ -57,10 +57,10 @@ export default function Nav() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-white/10 px-6 py-4 flex flex-col gap-4 text-sm text-white/70">
-          <a href="#services" onClick={() => setMenuOpen(false)} className="hover:text-white">Services</a>
-          <a href="#how-it-works" onClick={() => setMenuOpen(false)} className="hover:text-white">How It Works</a>
-          <a href="#case-study" onClick={() => setMenuOpen(false)} className="hover:text-white">Results</a>
+          <a href="#competitive-analysis" onClick={() => setMenuOpen(false)} className="hover:text-white">Competitive Analysis</a>
+          <a href="#workflow-automation" onClick={() => setMenuOpen(false)} className="hover:text-white">Workflow Automation</a>
           <a href="#pricing" onClick={() => setMenuOpen(false)} className="hover:text-white">Pricing</a>
+          <a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-white">About</a>
           <a
             href="https://www.linkedin.com/in/max-wexley"
             target="_blank"
@@ -69,8 +69,8 @@ export default function Nav() {
           >
             LinkedIn ↗
           </a>
-          <a href="#pricing" onClick={() => setMenuOpen(false)} className="mt-2 inline-block px-5 py-2.5 rounded-lg bg-gold text-navy font-bold text-center">
-            Get a Report →
+          <a href="#contact" onClick={() => setMenuOpen(false)} className="mt-2 inline-block px-5 py-2.5 rounded-lg bg-gold text-navy font-bold text-center">
+            Get Started →
           </a>
         </div>
       )}

@@ -4,21 +4,20 @@ const STRIPE_STARTER = process.env.NEXT_PUBLIC_STRIPE_STARTER_LINK || "#contact"
 const STRIPE_PRO     = process.env.NEXT_PUBLIC_STRIPE_PRO_LINK     || "#contact";
 const CALENDLY_URL   = process.env.NEXT_PUBLIC_CALENDLY_URL        || null;
 
-const TIERS = [
+const COMP_TIERS = [
   {
     name: "Starter",
     price: "$149",
     cadence: "one-time",
     badge: null,
     highlight: false,
-    description: "A comprehensive intelligence report on your top competitors — delivered to your inbox within 24 hours of your request.",
+    description: "A full competitive intelligence report delivered to your inbox within 24 hours.",
     features: [
-      "Full competitive intelligence report",
       "3 competitor deep-dives",
       "Real traffic & keyword data",
       "Market size estimate",
       "Budget-calibrated recommendations",
-      "Professional-grade PDF download",
+      "Professional PDF download",
     ],
     cta: "Get Starter Report — $149",
     href: STRIPE_STARTER,
@@ -30,9 +29,8 @@ const TIERS = [
     cadence: "one-time",
     badge: "Most Popular",
     highlight: true,
-    description: "Everything in Starter, plus a deeper competitive analysis and a 1:1 debrief with Max to walk through the findings.",
+    description: "Everything in Starter, plus a deeper analysis and a 30-min walkthrough call with Max.",
     features: [
-      "Everything in Starter",
       "5 competitor deep-dives",
       "Position score /10 vs. competitors",
       "Gap analysis & opportunity map",
@@ -49,14 +47,13 @@ const TIERS = [
     cadence: "/month",
     badge: null,
     highlight: false,
-    description: "Stay ahead month over month with ongoing reports and a competitive monitoring brief delivered to your inbox.",
+    description: "Ongoing competitive monitoring — two full reports per month plus a monthly brief.",
     features: [
       "2 full reports per month",
       "Monthly competitive monitoring brief",
       "Priority turnaround",
-      "Dedicated Slack or email channel",
+      "Dedicated email channel",
       "Quarterly strategy check-in",
-      "White-label option available",
     ],
     cta: "Start Retainer",
     href: "#contact",
@@ -68,23 +65,21 @@ export default function Pricing() {
   return (
     <section id="pricing" className="bg-navy py-24 px-6">
       <div className="max-w-5xl mx-auto">
+
+        {/* ── Competitive Analysis Pricing ─────────────────────── */}
         <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-4">
           Pricing
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Transparent pricing, no surprises
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+          Competitive Analysis
         </h2>
         <p className="text-white/50 text-base max-w-xl mb-14">
-          Every report is powered by real data and built to the same professional standard.
-          Need something custom?{" "}
-          <a href="#contact" className="text-gold hover:underline">
-            Contact us
-          </a>{" "}
-          for enterprise and custom scope engagements.
+          Flat-fee, no surprises. Every report is built to the same professional standard — whether
+          you order once or every month.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {TIERS.map((tier) => (
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          {COMP_TIERS.map((tier) => (
             <div
               key={tier.name}
               className={`relative rounded-2xl p-8 flex flex-col ${
@@ -102,11 +97,7 @@ export default function Pricing() {
               )}
 
               <div className="mb-6">
-                <p
-                  className={`text-xs font-bold tracking-widest uppercase mb-2 ${
-                    tier.highlight ? "text-navy/60" : "text-gold"
-                  }`}
-                >
+                <p className={`text-xs font-bold tracking-widest uppercase mb-2 ${tier.highlight ? "text-navy/60" : "text-gold"}`}>
                   {tier.name}
                 </p>
                 <div className="flex items-end gap-1.5 mb-3">
@@ -124,15 +115,8 @@ export default function Pricing() {
 
               <ul className="space-y-3 mb-8 flex-1">
                 {tier.features.map((f) => (
-                  <li
-                    key={f}
-                    className={`flex items-start gap-2.5 text-sm ${
-                      tier.highlight ? "text-navy/80" : "text-white/70"
-                    }`}
-                  >
-                    <span className={`mt-0.5 font-bold flex-shrink-0 ${tier.highlight ? "text-navy" : "text-gold"}`}>
-                      ✓
-                    </span>
+                  <li key={f} className={`flex items-start gap-2.5 text-sm ${tier.highlight ? "text-navy/80" : "text-white/70"}`}>
+                    <span className={`mt-0.5 font-bold flex-shrink-0 ${tier.highlight ? "text-navy" : "text-gold"}`}>✓</span>
                     {f}
                   </li>
                 ))}
@@ -157,33 +141,116 @@ export default function Pricing() {
                   rel="noopener noreferrer"
                   className="mt-3 w-full py-2.5 rounded-xl text-sm text-center text-navy/60 hover:text-navy font-medium transition-colors"
                 >
-                  📅 Book your debrief call →
+                  Book your debrief call →
                 </a>
               )}
             </div>
           ))}
         </div>
 
+        <p className="text-center text-white/20 text-xs mb-20">
+          ✓ Real traffic data via DataForSEO · ✓ Delivered within 24 hours · ✓ Professional PDF format
+        </p>
+
+        {/* ── Workflow Automation Pricing ───────────────────────── */}
+        <div className="border-t border-white/10 pt-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+            Workflow Automation
+          </h2>
+          <p className="text-white/50 text-base max-w-xl mb-10">
+            Every engagement is different, so I scope these individually. There's no hourly rate —
+            you get a fixed-fee proposal before any work begins.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {/* Process Audit */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+              <p className="text-gold text-xs font-bold tracking-widest uppercase mb-2">Step 1</p>
+              <h3 className="text-white text-xl font-bold mb-3">Process Audit</h3>
+              <p className="text-white/50 text-sm leading-relaxed mb-5">
+                I spend time understanding how your business actually operates — where time is lost,
+                what's repetitive, and what tools you already have. You get a written report with
+                prioritized automation opportunities and a rough cost estimate for each.
+              </p>
+              <ul className="space-y-2 mb-6">
+                {["1-hour discovery call", "Written audit report", "Ranked list of automation opportunities", "Cost estimates for each"].map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-sm text-white/60">
+                    <span className="text-gold font-bold flex-shrink-0">✓</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="#contact"
+                className="inline-block w-full py-3.5 rounded-xl border border-gold text-gold hover:bg-gold hover:text-navy font-bold text-sm text-center transition-colors"
+              >
+                Get a Quote →
+              </a>
+            </div>
+
+            {/* Implementation */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+              <p className="text-gold text-xs font-bold tracking-widest uppercase mb-2">Step 2</p>
+              <h3 className="text-white text-xl font-bold mb-3">Implementation</h3>
+              <p className="text-white/50 text-sm leading-relaxed mb-5">
+                Once we've agreed on what to build, I handle everything — setup, testing, and
+                handoff. You finish with a working system and a plain-language guide for running it
+                yourself going forward.
+              </p>
+              <ul className="space-y-2 mb-6">
+                {["Full build and configuration", "Testing and quality check", "Handoff documentation", "30-day support window"].map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-sm text-white/60">
+                    <span className="text-gold font-bold flex-shrink-0">✓</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="#contact"
+                className="inline-block w-full py-3.5 rounded-xl border border-gold text-gold hover:bg-gold hover:text-navy font-bold text-sm text-center transition-colors"
+              >
+                Start the Conversation →
+              </a>
+            </div>
+          </div>
+
+          {/* What businesses automate */}
+          <div className="border border-white/10 rounded-2xl px-8 py-6">
+            <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-4">Common automation projects</p>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+              {[
+                "Customer follow-up sequences",
+                "Lead intake and CRM updates",
+                "Invoice and payment reminders",
+                "Scheduling and appointment flows",
+                "Social media content workflows",
+                "Weekly reporting and summaries",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-2.5 text-sm text-white/50">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gold/60 flex-shrink-0" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Custom engagement */}
         <div className="mt-8 border border-white/10 rounded-2xl px-8 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div>
-            <p className="text-white font-semibold mb-1">Custom Engagement</p>
+            <p className="text-white font-semibold mb-1">Not sure which service fits?</p>
             <p className="text-white/50 text-sm">
-              Multi-location analysis, M&amp;A prep, franchise intelligence, or a fully custom scope.
-              We scope it together — you get a fixed-fee proposal.
+              Send me a message with a quick description of your business and what's on your mind.
+              I'll tell you straight whether I can help — and how.
             </p>
           </div>
           <a
             href="#contact"
-            className="flex-shrink-0 px-6 py-3 rounded-xl bg-white/10 text-white font-semibold text-sm hover:bg-white/20 transition-colors whitespace-nowrap"
+            className="flex-shrink-0 px-6 py-3 rounded-xl bg-gold text-navy font-bold text-sm hover:bg-gold-muted transition-colors whitespace-nowrap"
           >
-            Contact Us →
+            Get in Touch →
           </a>
         </div>
-
-        <p className="text-center text-white/20 text-xs mt-8">
-          ✓ Powered by Claude AI · ✓ Real traffic data via DataForSEO · ✓ Delivered within 24 hours · ✓ Professional PDF format
-        </p>
       </div>
     </section>
   );

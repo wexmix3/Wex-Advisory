@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import WhatWeDo from "@/components/WhatWeDo";
 import HowItWorks from "@/components/HowItWorks";
 import SampleReport from "@/components/SampleReport";
+import FreeSnapshot from "@/components/FreeSnapshot";
 import CaseStudy from "@/components/CaseStudy";
 import AboutFounder from "@/components/AboutFounder";
 import Pricing from "@/components/Pricing";
@@ -19,6 +20,7 @@ export default function Home() {
         <WhatWeDo />
         <HowItWorks />
         <SampleReport />
+        <FreeSnapshot />
         <CaseStudy />
         <AboutFounder />
         <Pricing />
