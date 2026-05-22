@@ -2,7 +2,6 @@
 
 const STRIPE_STARTER = process.env.NEXT_PUBLIC_STRIPE_STARTER_LINK || "#contact";
 const STRIPE_PRO     = process.env.NEXT_PUBLIC_STRIPE_PRO_LINK     || "#contact";
-const CALENDLY_URL   = process.env.NEXT_PUBLIC_CALENDLY_URL        || null;
 
 const COMP_TIERS = [
   {
@@ -40,24 +39,6 @@ const COMP_TIERS = [
     cta: "Get Professional Report — $299",
     href: STRIPE_PRO,
     external: STRIPE_PRO !== "#contact",
-  },
-  {
-    name: "Monthly Retainer",
-    price: "$599",
-    cadence: "/month",
-    badge: null,
-    highlight: false,
-    description: "Ongoing competitive monitoring — two full reports per month plus a monthly brief.",
-    features: [
-      "2 full reports per month",
-      "Monthly competitive monitoring brief",
-      "Priority turnaround",
-      "Dedicated email channel",
-      "Quarterly strategy check-in",
-    ],
-    cta: "Start Retainer",
-    href: "#contact",
-    external: false,
   },
 ];
 
@@ -134,16 +115,6 @@ export default function Pricing() {
                 {tier.cta}
               </a>
 
-              {tier.highlight && CALENDLY_URL && (
-                <a
-                  href={CALENDLY_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-3 w-full py-2.5 rounded-xl text-sm text-center text-navy/60 hover:text-navy font-medium transition-colors"
-                >
-                  Book your debrief call →
-                </a>
-              )}
             </div>
           ))}
         </div>
