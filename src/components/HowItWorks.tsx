@@ -39,9 +39,6 @@ function StepRow({ steps }: { steps: typeof COMP_STEPS }) {
     <div className="grid md:grid-cols-3 gap-8">
       {steps.map((step, i) => (
         <div key={step.num} className="relative">
-          {i < steps.length - 1 && (
-            <div className="hidden md:block absolute top-8 left-full w-full h-px bg-white/10 -translate-x-4 z-0" />
-          )}
           <div className="relative z-10">
             <div className="w-14 h-14 rounded-2xl border border-gold/30 bg-gold/10 flex items-center justify-center mb-6">
               <span className="text-gold font-bold text-lg">{step.num}</span>
