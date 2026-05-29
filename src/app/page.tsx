@@ -1,9 +1,10 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import AuditSpotlight from "@/components/AuditSpotlight";
 import WhatWeDo from "@/components/WhatWeDo";
 import HowItWorks from "@/components/HowItWorks";
 import SampleReport from "@/components/SampleReport";
-import FreeSnapshot from "@/components/FreeSnapshot";
+import AuditCTA from "@/components/AuditCTA";
 import CaseStudy from "@/components/CaseStudy";
 import AboutFounder from "@/components/AboutFounder";
 import Pricing from "@/components/Pricing";
@@ -17,10 +18,11 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <AuditSpotlight />
         <WhatWeDo />
         <HowItWorks />
         <SampleReport />
-        <FreeSnapshot />
+        <AuditCTA />
         <CaseStudy />
         <AboutFounder />
         <Pricing />
