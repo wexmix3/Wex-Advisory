@@ -8,12 +8,26 @@ export default function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur border-b border-white/10">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#">
-          <img
-            src="/projects/wex-advisory.png"
-            alt="Wex Advisory"
-            className="h-10 w-auto"
-          />
+        <a href="#" className="flex items-center gap-3 group">
+          {/* WA monogram — W strokes in white, gold crossbar (the hidden A) */}
+          <svg width="36" height="28" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polyline
+              points="8,8 33,82 60,8 87,82 112,8"
+              stroke="white"
+              strokeWidth="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <line x1="40" y1="50" x2="80" y2="50"
+              stroke="#C9A84C"
+              strokeWidth="10"
+              strokeLinecap="round"
+            />
+          </svg>
+          <div className="flex flex-col leading-none gap-0.5">
+            <span className="text-white font-bold text-base tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>Wex</span>
+            <span className="text-[#C9A84C] text-[9px] font-light tracking-[0.35em] uppercase">Advisory</span>
+          </div>
         </a>
 
         {/* Desktop nav */}
