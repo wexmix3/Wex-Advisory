@@ -10,7 +10,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3 group">
           {/* WA monogram — W strokes in white, gold crossbar (the hidden A) */}
-          <svg width="36" height="28" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="52" height="40" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
             <polyline
               points="8,8 33,82 60,8 87,82 112,8"
               stroke="white"
@@ -24,9 +24,9 @@ export default function Nav() {
               strokeLinecap="round"
             />
           </svg>
-          <div className="flex flex-col leading-none gap-0.5">
-            <span className="text-white font-bold text-base tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>Wex</span>
-            <span className="text-[#C9A84C] text-[9px] font-light tracking-[0.35em] uppercase">Advisory</span>
+          <div className="flex flex-col leading-none gap-1">
+            <span className="text-white font-bold text-xl tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>Wex</span>
+            <span className="text-[#C9A84C] text-[10px] font-light tracking-[0.35em] uppercase">Advisory</span>
           </div>
         </a>
 
