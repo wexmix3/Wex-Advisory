@@ -8,8 +8,12 @@ export default function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur border-b border-white/10">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-gold text-sm font-bold tracking-[0.3em] uppercase">
-          Wex Advisory
+        <a href="#">
+          <img
+            src="/projects/wex-advisory.png"
+            alt="Wex Advisory"
+            className="h-10 w-auto"
+          />
         </a>
 
         {/* Desktop nav */}
