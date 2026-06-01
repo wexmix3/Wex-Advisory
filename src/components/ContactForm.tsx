@@ -82,6 +82,22 @@ export default function ContactForm() {
                 <span>Response within 24 hours</span>
               </div>
             </div>
+
+            <div className="mt-8 pt-8 border-t border-white/10">
+              <p className="text-white/30 text-xs uppercase tracking-widest mb-3">Prefer to talk directly?</p>
+              <a
+                href="https://calendly.com/maxwexley-wexadvisory/free-strategy-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-gold text-sm font-semibold hover:text-gold/80 transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Book a free strategy call ↗
+              </a>
+            </div>
           </div>
 
           {/* Right: form */}

@@ -38,12 +38,10 @@ export default function Nav() {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="https://calendly.com/maxwexley-wexadvisory/free-strategy-call"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/#contact"
             className="px-4 py-2.5 rounded-lg border border-white/20 text-white/70 hover:border-gold/50 hover:text-white font-semibold text-sm transition-colors"
           >
-            Book a Call
+            Contact
           </a>
           <a
             href="https://audit.wexadvisory.com/audit"
@@ -76,15 +74,8 @@ export default function Nav() {
           <a href="/#pricing" onClick={() => setMenuOpen(false)} className="hover:text-white">Pricing</a>
           <a href="/#about" onClick={() => setMenuOpen(false)} className="hover:text-white">About</a>
           <a href="/work" onClick={() => setMenuOpen(false)} className="hover:text-white">Work</a>
+          <a href="/#contact" onClick={() => setMenuOpen(false)} className="hover:text-white">Contact</a>
           <a href="https://audit.wexadvisory.com/audit" className="hover:text-white">Free AI Audit</a>
-          <a
-            href="https://calendly.com/maxwexley-wexadvisory/free-strategy-call"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white"
-          >
-            Book a Strategy Call ↗
-          </a>
           <a
             href="https://audit.wexadvisory.com/audit"
             className="mt-2 inline-block px-5 py-2.5 rounded-lg bg-gold text-navy font-bold text-center"

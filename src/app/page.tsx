@@ -24,8 +24,8 @@ export default function Home() {
         <SampleReport />
         <AuditCTA />
         <CaseStudy />
-        <AboutFounder />
         <Pricing />
+        <AboutFounder />
         <FAQ />
         <ContactForm />
       </main>
