@@ -26,8 +26,8 @@ export default function Nav() {
         <nav className="hidden md:flex items-center gap-7 text-sm text-white/60">
           <a href="/#competitive-analysis" className="hover:text-white transition-colors">Services</a>
           <a href="/#pricing" className="hover:text-white transition-colors">Pricing</a>
-          <a href="/work" className="hover:text-white transition-colors">Work</a>
           <a href="/#about" className="hover:text-white transition-colors">About</a>
+          <a href="/work" className="hover:text-white transition-colors">Work</a>
           <a
             href="https://audit.wexadvisory.com/audit"
             className="hover:text-white transition-colors"
@@ -74,8 +74,8 @@ export default function Nav() {
         <div className="md:hidden border-t border-white/10 px-6 py-4 flex flex-col gap-4 text-sm text-white/70">
           <a href="/#competitive-analysis" onClick={() => setMenuOpen(false)} className="hover:text-white">Services</a>
           <a href="/#pricing" onClick={() => setMenuOpen(false)} className="hover:text-white">Pricing</a>
-          <a href="/work" onClick={() => setMenuOpen(false)} className="hover:text-white">Work</a>
           <a href="/#about" onClick={() => setMenuOpen(false)} className="hover:text-white">About</a>
+          <a href="/work" onClick={() => setMenuOpen(false)} className="hover:text-white">Work</a>
           <a href="https://audit.wexadvisory.com/audit" className="hover:text-white">Free AI Audit</a>
           <a
             href="https://calendly.com/maxwexley-wexadvisory/free-strategy-call"

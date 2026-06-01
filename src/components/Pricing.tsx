@@ -59,7 +59,7 @@ export default function Pricing() {
           you order once or every month.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-2xl">
           {COMP_TIERS.map((tier) => (
             <div
               key={tier.name}

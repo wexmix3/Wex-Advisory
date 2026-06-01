@@ -52,8 +52,8 @@ export default function Hero() {
 
         {/* Trust bar */}
         <div className="flex flex-wrap gap-6 text-white/30 text-xs">
+          <span>✓ 10+ reports delivered across multiple industries</span>
           <span>✓ Backed by real data — not guesswork</span>
-          <span>✓ No tech team required</span>
           <span>✓ Flat-fee reports — no surprise invoices</span>
           <span>✓ Results delivered in plain English</span>
         </div>
