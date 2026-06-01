@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur border-b border-white/10">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3">
           {/* Double-V monogram: outer ∨ = W (white), inner ∧ = A (gold) */}
           <svg width="52" height="56" viewBox="0 0 110 115" fill="none" xmlns="http://www.w3.org/2000/svg">
             <polyline points="5,12 55,95 105,12"
@@ -24,10 +24,10 @@ export default function Nav() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-7 text-sm text-white/60">
-          <a href="#competitive-analysis" className="hover:text-white transition-colors">Services</a>
-          <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+          <a href="/#competitive-analysis" className="hover:text-white transition-colors">Services</a>
+          <a href="/#pricing" className="hover:text-white transition-colors">Pricing</a>
           <a href="/work" className="hover:text-white transition-colors">Work</a>
-          <a href="#about" className="hover:text-white transition-colors">About</a>
+          <a href="/#about" className="hover:text-white transition-colors">About</a>
           <a
             href="https://audit.wexadvisory.com/audit"
             className="hover:text-white transition-colors"
@@ -72,10 +72,10 @@ export default function Nav() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-white/10 px-6 py-4 flex flex-col gap-4 text-sm text-white/70">
-          <a href="#competitive-analysis" onClick={() => setMenuOpen(false)} className="hover:text-white">Services</a>
-          <a href="#pricing" onClick={() => setMenuOpen(false)} className="hover:text-white">Pricing</a>
+          <a href="/#competitive-analysis" onClick={() => setMenuOpen(false)} className="hover:text-white">Services</a>
+          <a href="/#pricing" onClick={() => setMenuOpen(false)} className="hover:text-white">Pricing</a>
           <a href="/work" onClick={() => setMenuOpen(false)} className="hover:text-white">Work</a>
-          <a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-white">About</a>
+          <a href="/#about" onClick={() => setMenuOpen(false)} className="hover:text-white">About</a>
           <a href="https://audit.wexadvisory.com/audit" className="hover:text-white">Free AI Audit</a>
           <a
             href="https://calendly.com/maxwexley-wexadvisory/free-strategy-call"
