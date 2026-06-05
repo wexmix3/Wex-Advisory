@@ -59,7 +59,7 @@ export default function WhatWeDo() {
           Two ways I can help your business
         </h2>
         <p className="text-white/50 text-base max-w-xl mb-16">
-          Both services are built around the same idea: give small businesses access to tools
+          Both services are built around the same idea: give small and mid-market businesses access to tools
           and insights that used to be reserved for companies with much bigger budgets.
         </p>
 

@@ -1,7 +1,8 @@
 "use client";
 
-const STRIPE_STARTER = process.env.NEXT_PUBLIC_STRIPE_STARTER_LINK || "#contact";
-const STRIPE_PRO     = process.env.NEXT_PUBLIC_STRIPE_PRO_LINK     || "#contact";
+const TOOL_URL = "https://tool.wexadvisory.com";
+const STRIPE_STARTER = TOOL_URL;
+const STRIPE_PRO     = TOOL_URL;
 
 const COMP_TIERS = [
   {
@@ -129,8 +130,8 @@ export default function Pricing() {
             Workflow Automation
           </h2>
           <p className="text-white/50 text-base max-w-xl mb-10">
-            Every engagement is different, so I scope these individually. There's no hourly rate —
-            you get a fixed-fee proposal before any work begins.
+            Every engagement is scoped individually. I work on an hourly basis to build what you need,
+            with an optional monthly subscription to maintain and continue using what's been built.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
