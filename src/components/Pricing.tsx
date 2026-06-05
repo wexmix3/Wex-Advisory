@@ -1,46 +1,14 @@
 "use client";
 
 const TOOL_URL = "https://tool.wexadvisory.com";
-const STRIPE_STARTER = TOOL_URL;
-const STRIPE_PRO     = TOOL_URL;
 
-const COMP_TIERS = [
-  {
-    name: "Starter",
-    price: "$149",
-    cadence: "one-time",
-    badge: null,
-    highlight: false,
-    description: "A full competitive intelligence report delivered to your inbox within 24 hours.",
-    features: [
-      "3 competitor deep-dives",
-      "Real traffic & keyword data",
-      "Market size estimate",
-      "Budget-calibrated recommendations",
-      "Professional PDF download",
-    ],
-    cta: "Get Starter Report — $149",
-    href: STRIPE_STARTER,
-    external: STRIPE_STARTER !== "#contact",
-  },
-  {
-    name: "Professional",
-    price: "$299",
-    cadence: "one-time",
-    badge: "Most Popular",
-    highlight: true,
-    description: "Everything in Starter, plus a deeper analysis and a 30-min walkthrough call with Max.",
-    features: [
-      "5 competitor deep-dives",
-      "Position score /10 vs. competitors",
-      "Gap analysis & opportunity map",
-      "30-min debrief call with Max",
-      "Follow-up Q&A via email",
-    ],
-    cta: "Get Professional Report — $299",
-    href: STRIPE_PRO,
-    external: STRIPE_PRO !== "#contact",
-  },
+const COMP_FEATURES = [
+  "5 competitor deep-dives",
+  "Real traffic & keyword data",
+  "Market size estimate",
+  "Position score /10 vs. competitors",
+  "Budget-calibrated recommendations",
+  "Professional PDF download",
 ];
 
 export default function Pricing() {
@@ -60,67 +28,39 @@ export default function Pricing() {
           you order once or every month.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-2xl">
-          {COMP_TIERS.map((tier) => (
-            <div
-              key={tier.name}
-              className={`relative rounded-2xl p-8 flex flex-col ${
-                tier.highlight
-                  ? "bg-gold text-navy"
-                  : "bg-white/5 border border-white/10 text-white"
-              }`}
-            >
-              {tier.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-navy text-gold text-xs font-bold px-3 py-1 rounded-full tracking-widest uppercase">
-                    {tier.badge}
-                  </span>
-                </div>
-              )}
-
-              <div className="mb-6">
-                <p className={`text-xs font-bold tracking-widest uppercase mb-2 ${tier.highlight ? "text-navy/60" : "text-gold"}`}>
-                  {tier.name}
-                </p>
-                <div className="flex items-end gap-1.5 mb-3">
-                  <span className={`text-4xl font-extrabold ${tier.highlight ? "text-navy" : "text-white"}`}>
-                    {tier.price}
-                  </span>
-                  <span className={`text-sm mb-1.5 ${tier.highlight ? "text-navy/50" : "text-white/40"}`}>
-                    {tier.cadence}
-                  </span>
-                </div>
-                <p className={`text-sm leading-relaxed ${tier.highlight ? "text-navy/70" : "text-white/50"}`}>
-                  {tier.description}
-                </p>
+        <div className="max-w-md mb-8">
+          <div className="bg-gold rounded-2xl p-8">
+            <div className="mb-6">
+              <div className="flex items-end gap-1.5 mb-3">
+                <span className="text-4xl font-extrabold text-navy">$149</span>
+                <span className="text-sm mb-1.5 text-navy/50">one-time</span>
               </div>
-
-              <ul className="space-y-3 mb-8 flex-1">
-                {tier.features.map((f) => (
-                  <li key={f} className={`flex items-start gap-2.5 text-sm ${tier.highlight ? "text-navy/80" : "text-white/70"}`}>
-                    <span className={`mt-0.5 font-bold flex-shrink-0 ${tier.highlight ? "text-navy" : "text-gold"}`}>✓</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href={tier.href}
-                {...(tier.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className={`w-full py-3.5 rounded-xl font-bold text-sm text-center transition-all ${
-                  tier.highlight
-                    ? "bg-navy text-gold hover:bg-navy-light"
-                    : "border border-gold text-gold hover:bg-gold hover:text-navy"
-                }`}
-              >
-                {tier.cta}
-              </a>
-
+              <p className="text-sm leading-relaxed text-navy/70">
+                A full competitive intelligence report delivered to your inbox within 24 hours.
+              </p>
             </div>
-          ))}
+
+            <ul className="space-y-3 mb-8">
+              {COMP_FEATURES.map((f) => (
+                <li key={f} className="flex items-start gap-2.5 text-sm text-navy/80">
+                  <span className="mt-0.5 font-bold flex-shrink-0 text-navy">✓</span>
+                  {f}
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href={TOOL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3.5 rounded-xl font-bold text-sm text-center bg-navy text-gold hover:bg-navy-light transition-all block"
+            >
+              Get Report — $149
+            </a>
+          </div>
         </div>
 
-        <p className="text-center text-white/20 text-xs mb-20">
+        <p className="text-white/20 text-xs mb-20">
           ✓ Real traffic data via DataForSEO · ✓ Delivered within 24 hours · ✓ Professional PDF format
         </p>
 
