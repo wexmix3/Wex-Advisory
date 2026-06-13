@@ -29,7 +29,7 @@ export default function Nav() {
           <a href="/#about" className="hover:text-white transition-colors">About</a>
           <a href="/work" className="hover:text-white transition-colors">Work</a>
           <a
-            href="https://audit.wexadvisory.com/audit"
+            href="/audit"
             className="hover:text-white transition-colors"
           >
             Free AI Audit
@@ -44,7 +44,7 @@ export default function Nav() {
             Contact
           </a>
           <a
-            href="https://audit.wexadvisory.com/audit"
+            href="/audit"
             className="px-5 py-2.5 rounded-lg bg-gold text-navy font-bold text-sm hover:bg-gold-muted transition-colors"
           >
             Free AI Audit →
@@ -75,9 +75,9 @@ export default function Nav() {
           <a href="/#about" onClick={() => setMenuOpen(false)} className="hover:text-white">About</a>
           <a href="/work" onClick={() => setMenuOpen(false)} className="hover:text-white">Work</a>
           <a href="/#contact" onClick={() => setMenuOpen(false)} className="hover:text-white">Contact</a>
-          <a href="https://audit.wexadvisory.com/audit" className="hover:text-white">Free AI Audit</a>
+          <a href="/audit" onClick={() => setMenuOpen(false)} className="hover:text-white">Free AI Audit</a>
           <a
-            href="https://audit.wexadvisory.com/audit"
+            href="/audit"
             className="mt-2 inline-block px-5 py-2.5 rounded-lg bg-gold text-navy font-bold text-center"
           >
             Free AI Audit →
