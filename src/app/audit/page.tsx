@@ -121,13 +121,18 @@ export default function AuditPage() {
         <section className="bg-[#071220] py-24 px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
-              See exactly where AI saves{" "}
-              <span className="text-gold">your business money</span>
+              Free AI Audit for Your Business —{" "}
+              <span className="text-gold">See Exactly Where You Can Save Money</span>
             </h1>
-            <p className="text-white/65 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-              Free AI audit — specific automation opportunities, labor cost math,
-              and tool recommendations. PDF delivered to your inbox in minutes.
-              No credit card, no signup.
+            <p className="text-white/80 text-base leading-relaxed mb-4 max-w-xl mx-auto">
+              Wex Advisory&apos;s free AI audit analyzes your business and delivers a
+              quantified savings report — specific automation opportunities, labor cost
+              math, and tool recommendations. Free, no credit card.
+            </p>
+            <p className="text-white/55 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+              Enter your website URL and get a personalized AI opportunity report
+              delivered to your inbox. Real savings estimates with the math shown —
+              not generic advice.
             </p>
             <a
               href={AUDIT_URL}

@@ -9,9 +9,8 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-          Give your business<br />
-          the edge it{" "}
-          <span className="text-gold">deserves.</span>
+          AI Consulting for Small Businesses —{" "}
+          <span className="text-gold">Cut Costs and Save Time Without a Tech Team.</span>
         </h1>
 
         {/* Subhead */}
@@ -52,7 +51,7 @@ export default function Hero() {
 
         {/* Trust bar */}
         <div className="flex flex-wrap gap-6 text-white/30 text-xs">
-          <span>✓ 10+ reports delivered across multiple industries</span>
+          <span>✓ Built for businesses across any industry</span>
           <span>✓ Backed by real data — not guesswork</span>
           <span>✓ Flat-fee reports — no surprise invoices</span>
           <span>✓ Results delivered in plain English</span>
