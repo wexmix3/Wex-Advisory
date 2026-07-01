@@ -1,5 +1,7 @@
 "use client";
 
+import { Check } from "lucide-react";
+
 const TOOL_URL = "https://tool.wexadvisory.com";
 
 const COMP_FEATURES = [
@@ -43,7 +45,7 @@ export default function Pricing() {
             <ul className="space-y-3 mb-8">
               {COMP_FEATURES.map((f) => (
                 <li key={f} className="flex items-start gap-2.5 text-sm text-navy/80">
-                  <span className="mt-0.5 font-bold flex-shrink-0 text-navy">✓</span>
+                  <Check className="w-4 h-4 text-navy flex-shrink-0 mt-0.5" />
                   {f}
                 </li>
               ))}
@@ -60,8 +62,12 @@ export default function Pricing() {
           </div>
         </div>
 
-        <p className="text-white/20 text-xs mb-20">
-          ✓ Real traffic data via DataForSEO · ✓ Delivered within 24 hours · ✓ Professional PDF format
+        <p className="text-white/20 text-xs mb-20 flex flex-wrap items-center gap-x-2 gap-y-1">
+          <span className="flex items-center gap-1"><Check className="w-3 h-3 flex-shrink-0" /> Real traffic data via DataForSEO</span>
+          <span>·</span>
+          <span className="flex items-center gap-1"><Check className="w-3 h-3 flex-shrink-0" /> Delivered within 24 hours</span>
+          <span>·</span>
+          <span className="flex items-center gap-1"><Check className="w-3 h-3 flex-shrink-0" /> Professional PDF format</span>
         </p>
 
         {/* ── Workflow Automation Pricing ───────────────────────── */}
@@ -87,7 +93,7 @@ export default function Pricing() {
               <ul className="space-y-2 mb-6">
                 {["1-hour discovery call", "Written audit report", "Ranked list of automation opportunities", "Cost estimates for each"].map((f) => (
                   <li key={f} className="flex items-start gap-2.5 text-sm text-white/60">
-                    <span className="text-gold font-bold flex-shrink-0">✓</span>
+                    <Check className="w-4 h-4 text-[#C8A84B] flex-shrink-0 mt-0.5" />
                     {f}
                   </li>
                 ))}
@@ -112,7 +118,7 @@ export default function Pricing() {
               <ul className="space-y-2 mb-6">
                 {["Full build and configuration", "Testing and quality check", "Handoff documentation", "30-day support window"].map((f) => (
                   <li key={f} className="flex items-start gap-2.5 text-sm text-white/60">
-                    <span className="text-gold font-bold flex-shrink-0">✓</span>
+                    <Check className="w-4 h-4 text-[#C8A84B] flex-shrink-0 mt-0.5" />
                     {f}
                   </li>
                 ))}

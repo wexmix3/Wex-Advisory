@@ -53,7 +53,7 @@ export default function Nav() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-white/60 hover:text-white"
+          className="md:hidden text-white/60 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C8A84B]"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >

@@ -1,3 +1,5 @@
+import { Check } from "lucide-react";
+
 export default function Hero() {
   return (
     <section className="min-h-screen bg-navy flex flex-col justify-center pt-20 pb-16 px-6">
@@ -51,10 +53,10 @@ export default function Hero() {
 
         {/* Trust bar */}
         <div className="flex flex-wrap gap-6 text-white/30 text-xs">
-          <span>✓ Built for businesses across any industry</span>
-          <span>✓ Backed by real data — not guesswork</span>
-          <span>✓ Flat-fee reports — no surprise invoices</span>
-          <span>✓ Results delivered in plain English</span>
+          <span className="flex items-center gap-1.5"><Check className="w-3 h-3 text-[#C8A84B] flex-shrink-0" /> Built for businesses across any industry</span>
+          <span className="flex items-center gap-1.5"><Check className="w-3 h-3 text-[#C8A84B] flex-shrink-0" /> Backed by real data — not guesswork</span>
+          <span className="flex items-center gap-1.5"><Check className="w-3 h-3 text-[#C8A84B] flex-shrink-0" /> Flat-fee reports — no surprise invoices</span>
+          <span className="flex items-center gap-1.5"><Check className="w-3 h-3 text-[#C8A84B] flex-shrink-0" /> Results delivered in plain English</span>
         </div>
       </div>
 
