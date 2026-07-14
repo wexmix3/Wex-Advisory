@@ -35,3 +35,7 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Aider
+.aider.chat.history.md
+.aider.tags.cache.v3/

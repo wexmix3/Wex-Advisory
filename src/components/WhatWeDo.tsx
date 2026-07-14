@@ -122,14 +122,8 @@ export default function WhatWeDo() {
             could be handled automatically. I find those tasks, build the tools, and hand them off
             to you ready to run — no ongoing developer relationship needed.
           </p>
-          <div className="grid md:grid-cols-5 gap-6 items-start">
-            <div className="md:col-span-3">
-              <FeatureCard {...AUTO_FEATURES[0]} />
-            </div>
-            <div className="md:col-span-2 grid gap-6">
-              <FeatureCard {...AUTO_FEATURES[1]} />
-              <FeatureCard {...AUTO_FEATURES[2]} />
-            </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {AUTO_FEATURES.map((f) => <FeatureCard key={f.title} {...f} />)}
           </div>
           <div className="mt-6">
             <a
