@@ -82,7 +82,7 @@ export default function Pricing() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {/* Process Audit */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col">
               <p className="text-gold text-xs font-bold tracking-widest uppercase mb-2">Step 1</p>
               <h3 className="text-white text-xl font-bold mb-3">Process Audit</h3>
               <p className="text-white/50 text-sm leading-relaxed mb-5">
@@ -100,14 +100,14 @@ export default function Pricing() {
               </ul>
               <a
                 href="#contact"
-                className="inline-block w-full py-3.5 rounded-xl border border-gold text-gold hover:bg-gold hover:text-navy font-bold text-sm text-center transition-colors"
+                className="mt-auto inline-block w-full py-3.5 rounded-xl border border-gold text-gold hover:bg-gold hover:text-navy font-bold text-sm text-center transition-colors"
               >
                 Get a Quote →
               </a>
             </div>
 
             {/* Implementation */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col">
               <p className="text-gold text-xs font-bold tracking-widest uppercase mb-2">Step 2</p>
               <h3 className="text-white text-xl font-bold mb-3">Implementation</h3>
               <p className="text-white/50 text-sm leading-relaxed mb-5">
@@ -125,7 +125,7 @@ export default function Pricing() {
               </ul>
               <a
                 href="#contact"
-                className="inline-block w-full py-3.5 rounded-xl border border-gold text-gold hover:bg-gold hover:text-navy font-bold text-sm text-center transition-colors"
+                className="mt-auto inline-block w-full py-3.5 rounded-xl border border-gold text-gold hover:bg-gold hover:text-navy font-bold text-sm text-center transition-colors"
               >
                 Start the Conversation →
               </a>

@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-navy flex flex-col justify-center pt-20 pb-16 px-6">
+    <section className="min-h-screen bg-navy flex flex-col justify-center pt-28 pb-16 px-6">
       <div className="max-w-4xl mx-auto w-full">
         {/* Eyebrow */}
         <p className="text-gold text-xs font-bold tracking-[0.35em] uppercase mb-6">
