@@ -33,11 +33,14 @@ export default function CaseStudy() {
 
           <div className="px-8 py-8">
             {/* Outcome stats */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              {OUTCOMES.map((o) => (
-                <div key={o.label} className="bg-navy/60 border border-white/10 rounded-xl p-5 text-center">
-                  <div className="text-gold text-3xl font-extrabold mb-2">{o.stat}</div>
-                  <div className="text-white/50 text-xs leading-tight">{o.label}</div>
+            <div className="flex flex-wrap items-baseline gap-x-10 gap-y-4 mb-10 pb-8 border-b border-white/10">
+              {OUTCOMES.map((o, i) => (
+                <div key={o.label} className="flex items-baseline gap-2.5">
+                  <div className="text-gold text-4xl font-extrabold tabular-nums">{o.stat}</div>
+                  <div className="text-white/40 text-xs leading-tight max-w-[110px]">{o.label}</div>
+                  {i < OUTCOMES.length - 1 && (
+                    <span className="hidden sm:inline text-white/10 text-2xl ml-8">·</span>
+                  )}
                 </div>
               ))}
             </div>

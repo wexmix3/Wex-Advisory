@@ -4,7 +4,6 @@ import AuditSpotlight from "@/components/AuditSpotlight";
 import WhatWeDo from "@/components/WhatWeDo";
 import HowItWorks from "@/components/HowItWorks";
 import SampleReport from "@/components/SampleReport";
-import AuditCTA from "@/components/AuditCTA";
 import CaseStudy from "@/components/CaseStudy";
 import AboutFounder from "@/components/AboutFounder";
 import Pricing from "@/components/Pricing";
@@ -22,7 +21,6 @@ export default function Home() {
         <WhatWeDo />
         <HowItWorks />
         <SampleReport />
-        <AuditCTA />
         <CaseStudy />
         <Pricing />
         <AboutFounder />
