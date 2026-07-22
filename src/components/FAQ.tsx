@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const FAQS = [
   // Competitive Analysis
@@ -67,24 +68,20 @@ export default function FAQ() {
           {FAQS.map((faq, i) => (
             <div
               key={i}
-              className="bg-white/5 border border-white/10 rounded-xl overflow-hidden"
+              className="bg-white/[0.04] rounded-xl overflow-hidden"
             >
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 text-white/80 hover:text-white transition-colors"
               >
                 <span className="font-semibold text-sm">{faq.q}</span>
-                <svg
+                <ChevronDown
                   className={`w-4 h-4 flex-shrink-0 text-gold transition-transform ${open === i ? "rotate-180" : ""}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
+                  strokeWidth={2}
+                />
               </button>
               {open === i && (
-                <div className="px-6 pb-5 text-white/60 text-sm leading-relaxed border-t border-white/10 pt-4">
+                <div className="px-6 pb-5 text-white/60 text-sm leading-relaxed border-t border-white/[0.06] pt-4">
                   {faq.a}
                 </div>
               )}

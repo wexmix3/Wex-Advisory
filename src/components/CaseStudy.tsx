@@ -2,6 +2,7 @@ const OUTCOMES = [
   { stat: "5", label: "Competitor profiles built" },
   { stat: "3", label: "Local SEO gaps identified" },
   { stat: "5", label: "Ranked action items delivered" },
+  { stat: "9hrs", label: "Delivered after kickoff" },
 ];
 
 export default function CaseStudy() {
@@ -19,7 +20,7 @@ export default function CaseStudy() {
           where they stood against regional competitors before making resource allocation decisions.
         </p>
 
-        <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+        <div className="bg-white/[0.04] rounded-2xl overflow-hidden">
           {/* Top bar */}
           <div className="border-l-4 border-gold bg-white/[0.03] px-8 py-6 flex items-center justify-between flex-wrap gap-4">
             <div>
@@ -46,7 +47,7 @@ export default function CaseStudy() {
             </div>
 
             {/* What was delivered */}
-            <div className="border border-white/10 rounded-xl px-6 py-5">
+            <div className="bg-white/[0.03] rounded-xl px-6 py-5">
               <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-3">
                 What was delivered
               </p>

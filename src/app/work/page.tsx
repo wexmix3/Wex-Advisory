@@ -43,6 +43,7 @@ const CASE_STUDIES: CaseStudy[] = [
       { stat: "5", label: "Competitor profiles built" },
       { stat: "3", label: "Local SEO gaps identified" },
       { stat: "5", label: "Ranked action items delivered" },
+      { stat: "9hrs", label: "Delivered after kickoff" },
     ],
   },
 ];
@@ -116,7 +117,7 @@ export default function WorkPage() {
                     <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-3">
                       Outcomes
                     </p>
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {cs.outcomes.map((o) => (
                         <div
                           key={o.label}

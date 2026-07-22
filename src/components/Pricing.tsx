@@ -82,7 +82,7 @@ export default function Pricing() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {/* Process Audit */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col">
+            <div className="bg-white/[0.04] rounded-2xl p-8 flex flex-col">
               <p className="text-gold text-xs font-bold tracking-widest uppercase mb-2">Step 1</p>
               <h3 className="text-white text-xl font-bold mb-3">Process Audit</h3>
               <p className="text-white/50 text-sm leading-relaxed mb-5">
@@ -107,7 +107,7 @@ export default function Pricing() {
             </div>
 
             {/* Implementation */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col">
+            <div className="bg-white/[0.04] rounded-2xl p-8 flex flex-col">
               <p className="text-gold text-xs font-bold tracking-widest uppercase mb-2">Step 2</p>
               <h3 className="text-white text-xl font-bold mb-3">Implementation</h3>
               <p className="text-white/50 text-sm leading-relaxed mb-5">
@@ -133,7 +133,7 @@ export default function Pricing() {
           </div>
 
           {/* What businesses automate */}
-          <div className="border border-white/10 rounded-2xl px-8 py-6">
+          <div className="bg-white/[0.03] rounded-2xl px-8 py-6">
             <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-4">Common automation projects</p>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
               {[
@@ -154,7 +154,7 @@ export default function Pricing() {
         </div>
 
         {/* Custom engagement */}
-        <div className="mt-8 border border-white/10 rounded-2xl px-8 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div className="mt-8 bg-white/[0.03] rounded-2xl px-8 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div>
             <p className="text-white font-semibold mb-1">Not sure which service fits?</p>
             <p className="text-white/50 text-sm">
