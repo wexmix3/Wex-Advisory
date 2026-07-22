@@ -32,7 +32,7 @@ export default function ContactForm() {
     "w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:ring-2 focus:ring-[#C8A84B]/40 focus:border-[#C8A84B] transition-colors";
 
   return (
-    <section id="contact" className="bg-[#0a1a30] py-24 px-6">
+    <section id="contact" className="bg-[#071220] py-24 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-14">
           {/* Left: copy */}

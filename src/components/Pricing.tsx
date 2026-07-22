@@ -15,7 +15,7 @@ const COMP_FEATURES = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-navy py-24 px-6">
+    <section id="pricing" className="relative bg-navy glow-navy py-24 px-6 overflow-hidden">
       <div className="max-w-5xl mx-auto">
 
         {/* ── Competitive Analysis Pricing ─────────────────────── */}
