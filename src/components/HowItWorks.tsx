@@ -36,14 +36,18 @@ const AUTO_STEPS = [
 
 function StepRow({ steps }: { steps: typeof COMP_STEPS }) {
   return (
-    <div className="grid md:grid-cols-3 gap-8">
-      {steps.map((step, i) => (
-        <div key={step.num} className="relative">
-          <div className="relative z-10">
-            <div className="w-14 h-14 rounded-2xl border border-gold/30 bg-gold/10 flex items-center justify-center mb-6">
+    <div className="relative grid md:grid-cols-3 gap-8 md:gap-6">
+      {/* Connecting line — earns the numbering since this is a real sequence */}
+      <div className="hidden md:block absolute top-7 left-0 right-0 h-px bg-gradient-to-r from-gold/40 via-gold/15 to-transparent" />
+      {steps.map((step) => (
+        <div key={step.num} className="relative flex md:flex-col gap-4 md:gap-0">
+          <div className="relative z-10 flex-shrink-0">
+            <div className="w-14 h-14 rounded-full border border-gold/40 bg-navy flex items-center justify-center md:mb-6">
               <span className="text-gold font-bold text-lg">{step.num}</span>
             </div>
-            <h3 className="text-white font-bold text-lg mb-3">{step.title}</h3>
+          </div>
+          <div>
+            <h3 className="text-white font-bold text-lg mb-2 md:mb-3">{step.title}</h3>
             <p className="text-white/50 text-sm leading-relaxed">{step.desc}</p>
           </div>
         </div>
@@ -54,7 +58,7 @@ function StepRow({ steps }: { steps: typeof COMP_STEPS }) {
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-[#0a1a30] py-24 px-6">
+    <section id="how-it-works" className="bg-[#071220] py-24 px-6">
       <div className="max-w-5xl mx-auto">
         <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-4">
           How It Works

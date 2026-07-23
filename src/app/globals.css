@@ -14,6 +14,29 @@ body {
   position: relative;
 }
 
+/* Radial glow used behind a few signature sections (hero, spotlight, pricing)
+   so the ~10,000px scroll isn't one flat wall of color. */
+.glow-navy {
+  background-image: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(200, 168, 75, 0.10), transparent 65%);
+}
+
+.glow-deep {
+  background-image: radial-gradient(ellipse 70% 50% at 50% 100%, rgba(200, 168, 75, 0.07), transparent 70%);
+}
+
+/* Scroll-entrance animation: fade + translate up as each section enters view.
+   Toggled via IntersectionObserver in ScrollReveal.tsx (adds .is-visible). */
+.reveal {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 550ms ease-out, transform 550ms ease-out;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 body::before {
   content: "";
   position: fixed;

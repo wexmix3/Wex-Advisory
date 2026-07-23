@@ -31,7 +31,7 @@ export default function SampleReport() {
         {/* Stat grid */}
         <div className="grid grid-cols-3 md:grid-cols-6 gap-3 mb-10">
           {STATS.map((s) => (
-            <div key={s.label} className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
+            <div key={s.label} className="bg-white/[0.04] rounded-xl p-4 text-center">
               <div className="text-gold text-xl font-bold mb-1">{s.value}</div>
               <div className="text-white/40 text-xs leading-tight">{s.label}</div>
             </div>

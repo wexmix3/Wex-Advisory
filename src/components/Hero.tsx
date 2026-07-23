@@ -1,9 +1,9 @@
-import { Check } from "lucide-react";
+import { Check, BarChart3, Zap, ChevronDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-navy flex flex-col justify-center pt-28 pb-16 px-6">
-      <div className="max-w-4xl mx-auto w-full">
+    <section className="relative min-h-dvh bg-navy glow-navy flex flex-col justify-center pt-28 pb-16 px-6 overflow-hidden">
+      <div className="max-w-4xl mx-auto w-full relative z-10">
         {/* Eyebrow */}
         <p className="text-gold text-xs font-bold tracking-[0.35em] uppercase mb-6">
           AI-Powered Business Consulting
@@ -12,7 +12,7 @@ export default function Hero() {
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
           AI Consulting for Small Businesses —{" "}
-          <span className="text-gold">Cut Costs and Save Time Without a Tech Team.</span>
+          <span className="text-gold">Cut Costs and Save Time</span> Without a Tech Team.
         </h1>
 
         {/* Subhead */}
@@ -27,20 +27,14 @@ export default function Hero() {
             href="#competitive-analysis"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gold text-navy font-bold text-sm hover:bg-gold-muted transition-colors"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-            </svg>
+            <BarChart3 className="w-4 h-4" strokeWidth={2} />
             Competitive Analysis
           </a>
           <a
             href="#workflow-automation"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-white/20 text-white/80 font-semibold text-sm hover:border-gold hover:text-gold transition-colors"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
+            <Zap className="w-4 h-4" strokeWidth={2} />
             Workflow Automation
           </a>
           <a
@@ -61,11 +55,9 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="flex justify-center mt-12 md:mt-16">
+      <div className="relative z-10 flex justify-center mt-12 md:mt-16">
         <a href="#services" className="text-white/20 hover:text-white/40 transition-colors animate-bounce">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
-          </svg>
+          <ChevronDown className="w-6 h-6" strokeWidth={1.5} />
         </a>
       </div>
     </section>

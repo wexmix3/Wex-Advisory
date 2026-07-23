@@ -10,22 +10,24 @@ import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
     <>
       <Nav />
       <main>
+        {/* Hero renders above the fold — no reveal wrapper so it's visible immediately on load */}
         <Hero />
-        <AuditSpotlight />
-        <WhatWeDo />
-        <HowItWorks />
-        <SampleReport />
-        <CaseStudy />
-        <Pricing />
-        <AboutFounder />
-        <FAQ />
-        <ContactForm />
+        <ScrollReveal><AuditSpotlight /></ScrollReveal>
+        <ScrollReveal><WhatWeDo /></ScrollReveal>
+        <ScrollReveal><HowItWorks /></ScrollReveal>
+        <ScrollReveal><SampleReport /></ScrollReveal>
+        <ScrollReveal><CaseStudy /></ScrollReveal>
+        <ScrollReveal><Pricing /></ScrollReveal>
+        <ScrollReveal><AboutFounder /></ScrollReveal>
+        <ScrollReveal><FAQ /></ScrollReveal>
+        <ScrollReveal><ContactForm /></ScrollReveal>
       </main>
       <Footer />
     </>
